@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "noEmitOnError": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "importHelpers": true,
+    "target": "es2015",
+    "esModuleInterop": true,
+    "module": "esnext",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "incremental": true,
+    "allowJs": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "paths": {
+      "@lesechos/views": [ "src/views/index.ts" ],
+      "@lesechos/components": [ "src/components/index.ts" ],
+      "@lesechos/layouts": ["src/layouts/index.ts"],
+      "@lesechos/types": ["src/types/index.ts"],
+      "@lesechos/hooks": ["src/hooks/index.ts"],
+      "@lesechos/theme": ["src/theme/index.ts"],
+      "@lesechos/data": ["data/index.ts"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
